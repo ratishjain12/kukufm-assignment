@@ -1,0 +1,7 @@
+{
+  "anthropic/claude-opus-5-5": {"input_per_mtok": 4.00, "output_per_mtok": 20.00},
+  "anthropic/claude-sonnet-5-5": {"input_per_mtok": 2.00, "output_per_mtok": 10.00},
+  "anthropic/claude-haiku-4-5-20251001": {"input_per_mtok": 1.00, "output_per_mtok": 5.00},
+  "bedrock/qwen.qwen3-235b-a22b-2507-v1:0": {"input_per_mtok": 0.26, "output_per_mtok": 1.04},
+  "bedrock/moonshotai.kimi-k2.5": {"input_per_mtok": 0.72, "output_per_mtok": 3.60}
+}

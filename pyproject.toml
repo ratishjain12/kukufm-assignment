@@ -1,0 +1,34 @@
+[project]
+name = "tha"
+version = "0.1.0"
+description = "Agentic serial story writer: plans a 200-episode arc and writes it with human-in-the-loop control"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.11.0",
+    "boto3>=1.43.106",
+    "openai>=3.22.1",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.12"
+check_untyped_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 130
