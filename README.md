@@ -14,7 +14,7 @@ cp .env.example .env      # fill in ONE of the three setups inside (Anthropic, A
 uv run python main.py demo
 ```
 
-`demo` runs the whole scenario against the real models and exports the deliverables to `demo/` (about 15-20 minutes). Every step and every model call prints as it happens. See [What the demo does](#what-the-demo-does).
+`demo` runs the whole scenario against the real models and exports the deliverables to `demo/` (about 15 minutes and under $0.50 on the Bedrock setup in `.env.example`; for a quick check use `--plan-length 20 --episodes 6`). Every step and every model call prints as it happens. See [What the demo does](#what-the-demo-does).
 
 | Provider | You need | Models |
 |---|---|---|
@@ -144,7 +144,7 @@ src/core/                planner, memory, writer, critic, extractor, state_delta
 src/llm/                 provider-agnostic client, retry/cost wrapper, structured output, adapters
 src/storage/             SQLite schema and repository (the only SQL in the project)
 src/prompts/*.md         prompts as data
-specs/                   design specs; CHECKLIST.md tracks progress
+specs/                   design specs, one per module
 tests/                   scripted fake LLMs, no network
 ```
 

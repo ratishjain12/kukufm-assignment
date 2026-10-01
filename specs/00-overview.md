@@ -43,6 +43,3 @@ memory.assemble(run_id, episode_no)
   -> repo.save_episode(...), repo.log_llm_calls(...)
   -> advance to episode N+1
 ```
-
-## Deliverables checklist
-See `/CHECKLIST.md` at repo root.
