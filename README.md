@@ -158,4 +158,4 @@ uv run mypy src main.py
 
 ## Status and limits
 
-Verified live on AWS Bedrock (Qwen3-235B for planning, critic and extraction; Kimi K2.5 for writing): the full 200-episode plan, 18 episodes, rejects, directives, resume and export. The Anthropic and OpenAI adapters are unit-tested against fakes but were not exercised live. Known weaknesses, measured on the runs and what to do about them, are in `DECISIONS.md`.
+Verified live on AWS Bedrock (Qwen3-235B for planning, critic and extraction; Kimi K2.5 for writing): the full 200-episode plan, 18 episodes for $0.37, a rejection, two directives, a resumed second session and the export in `demo/`. The Anthropic and OpenAI adapters are unit-tested against fakes but were not exercised live. After that run I lowered the writer's length target (it overshot 700 words on most episodes) and raised the extractor's token cap; those two changes were not re-run, so the demo reflects the earlier behaviour. Measured weaknesses (state not always matching the story, duplicate character entries, repetitive imagery) are listed in `DECISIONS.md`.

@@ -44,17 +44,23 @@ each spec file's own `## Status` line to match.
 - [x] `tests/test_memory.py`
 - [x] `tests/test_orchestrator.py` — resume + retroactive-edit staleness logic
 
-## Live run / demo
-- [ ] Full 200-episode arc plan generated for the sent premise
-- [ ] 15+ episodes written and reviewed
-- [ ] HITL intervention #1 (feedback) applied, shown to change a later episode
-- [ ] HITL intervention #2 (retroactive edit on an earlier episode) applied, downstream staleness shown
-- [ ] `cost-report` run, real numbers captured for DECISIONS.md
-- [ ] Stop/resume demonstrated (stop after ep 12, resume, continue)
+## Live run / demo (run_d0fff703, Bedrock: Qwen3-235B + Kimi K2.5)
+- [x] Full 200-episode arc plan generated for the premise (one edit with feedback, then approved)
+- [x] 18 episodes written and reviewed
+- [x] HITL intervention #1: directive "end on spoken dialogue" at episode 4; endings change from episode 5 (12 of 14 comply)
+- [x] HITL intervention #2: directive "kill Mira Chen" at episode 8; the death appears on the page in episodes 11-12 (database state still says alive, see DECISIONS.md)
+- [x] One episode rejected with a reason (episode 3)
+- [x] Stop/resume: session 1 (episodes 1-12), session 2 resumes from the database (13-18)
+- [x] `cost-report` run, measured numbers in DECISIONS.md ($0.37 for 18 episodes, about $4 projected for 200)
+- [ ] Retroactive edit on an earlier episode: not in the scripted demo, shown in the screen recording
 
 ## Deliverables
-- [x] README.md — setup in <5 min, usage walkthrough
-- [~] DECISIONS.md — drafted and one page; cost/time numbers to be replaced with measured values after the live run
-- [ ] Demo output saved (plan + episodes) in repo or `runs/`
-- [ ] Screen recording (<5 min) of HITL flow
+- [x] README.md: setup, usage, how context is built
+- [x] DECISIONS.md: one page, measured numbers, honest limits
+- [x] Demo output saved in `demo/` (plan, episodes, human decisions, cost report, traces)
+- [ ] Screen recording (<5 min) of the HITL flow
 - [x] Final pass against `knowledge-base/review-checklist.md` conventions
+
+## Known limits (post-demo fixes not re-run)
+- Writer length target lowered and extractor max tokens raised after the demo; the demo predates both.
+- State/story drift on ambiguous events, duplicate character entries, repetitive imagery (DECISIONS.md section 4).

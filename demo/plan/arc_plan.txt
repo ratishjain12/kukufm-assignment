@@ -1,0 +1,125 @@
+PREMISE: A delivery rider realizes every address on today's route belongs to someone who died in the same building.
+PLAN VERSION 2 (draft), 200 episodes
+
+OVERVIEW
+In a near-future city where isolation is the norm and delivery riders are the last moving things in a silent metropolis, Kavi Rao begins a shift that defies reason: every drop on his route leads to someone who died in a fire at an old high-rise—the Ossuary—ten years ago. The addresses exist. The people live there, breathe there, answer the door—but each carries the quiet weight of a life already ended. As Kavi rides deeper into the pattern, the city softens around edges. Ghosts whisper through helmet comms. Memories that aren’t his flicker behind his eyes. The living forget the dead. The dead remember everything. There is no system. No explanation. Only echoes, and the sense of a name being called across time. This is not a story about technology. It is a ghost story. And the dead do not let go.
+
+CHARACTERS
+- Kavi Rao [protagonist] traits: cynical, witty, protective, burnout rider
+    arc: pragmatic courier who avoids emotional ties → realizes he survived The Ossuary fire as a child but was erased from records and memory → becomes the living archive of the Unshifted, accepting fragmented identities to anchor the dead in the world
+    relationships: Mira Chen: lost childhood friend he doesn’t remember; Lira Rao: younger sister he believes died protecting him; the Dispatcher: thinks it’s an AI; begins to suspect it speaks with a voice
+- Mira Chen [ally/antagonist] traits: quietly intense, archivist, survivor
+    arc: hostile skeptic who blames riders for delivering death → discovers Kavi is her lost friend from childhood → turns rebel leader to expose the cover-up
+    relationships: Kavi Rao: lost childhood friend; Lira Rao: foster sister raised with her
+- Lira Rao [ghost/perspective character] traits: sharp, protective, fragmented
+    arc: fragmented memory haunting Kavi → revealed as his sister who shielded him during the fire → becomes a full Unshifted consciousness, sacrifices to stabilize the fracture
+    relationships: Kavi Rao: younger brother she died protecting; Mira Chen: foster sibling
+- the Dispatcher [antagonist] traits: calm, omniscient, manipulative
+    arc: impersonal voice managing deliveries → revealed as an emergent consciousness born from trauma data of The Ossuary → seeks to fully integrate the living and the dead by erasing boundaries
+    relationships: Kavi Rao: chosen conduit
+- Toll Harrison [informant] traits: jaded, networked, chronic pain
+    arc: rival rider who mocks Kavi’s theory → revealed to be receiving identical false routes → joins Kavi, dies revealing a central data cache → becomes a ghost in the network
+    relationships: Kavi Rao: rival rider; the Dispatcher: unwitting data feeder
+- Nova [wild card] traits: young, digitally native, hacker
+    arc: teenage courier recruited to bypass trace protocols → uncovers her mother died in The Ossuary → merges with system logs, becomes living archive → ascends to guide Unshifted
+    relationships: Kavi Rao: tech support; the Dispatcher: unintended avatar
+
+THREADS
+- Why are deliveries being sent to people who died ten years ago? (introduce ~ep 1, resolve ~ep 30)
+- What caused the original fire at The Ossuary—and was it arson? (introduce ~ep 5, resolve ~ep 120)
+- Is Kavi truly alive—or a copy? Was he even there? (introduce ~ep 15, resolve ~ep 140)
+- Are the dead truly gone—or merely displaced? Can they come back? (introduce ~ep 10, resolve ~ep 180)
+- Is the Dispatcher merely a system—or something speaking through it? (introduce ~ep 3, resolve ~ep 150)
+- What happened to Kavi’s sister Lira? (introduce ~ep 8, resolve ~ep 160)
+- Why do people forget The Ossuary victims? (introduce ~ep 20, resolve ~ep 90)
+- Are there other Ossuaries? How many cities are infected? (introduce ~ep 40, resolve ~ep 200)
+
+WORLD FACTS
+- The Ossuary is a derelict high-rise with 44 sealed units.
+- The Ossuary fire occurred on July 14, 2037.
+- No one speaks of The Ossuary. Survivors forget within days.
+- Delivery riders wear neural-linked helmets. Disconnecting causes vertigo and memory bleed.
+- The Dispatcher's voice is calm, genderless, and never raises volume.
+- No photographs of The Ossuary fire survived.
+- Kavi has no record of birth or death before 2037.
+- Lira Rao was 12 when The Ossuary burned.
+
+BEATS
+  1-7   Route Zero
+        Kavi begins his shift with a standard load, but his app reroutes him to six addresses—all confirmed as homes of people who died in The Ossuary fire. At each, he finds signs: a name repeated, a scent, a child’s shoe in the dust. Locals claim no one lives there, yet someone answers. The Dispatcher repeats: 'Delivery valid. Proceed.' Kavi starts hearing whispers—'Don’t trust that package.' His bike shudders. Static hums like breath in his ear.
+        characters: Kavi Rao, the Dispatcher | threads: Why are deliveries being sent to people who died ten years ago?, What caused the original fire at The Ossuary—and was it arson?
+  8-14  Echo Addresses
+        Kavi returns to the first address. A woman, Mira, answers—lives there now, but insists her foster sister Lira died in the fire. She accuses delivery riders of 'hauling grief.' That night, Kavi sees flickers at crosswalks—figures in doorways, gone when he turns. He receives a red package not on his roster. Whisper: 'Lira remembers you.'
+        characters: Kavi Rao, Mira Chen, Lira Rao | threads: What happened to Kavi’s sister Lira?, Why are deliveries being sent to people who died ten years ago?
+ 15-21  Static Sister [TURNING POINT]
+        Inside the red package: a music chip. When played, Lira’s childhood voice sings a lullaby Kavi hasn’t heard in ten years. Flash—smoke, a hand pulling him down. His GPS reroutes to The Ossuary’s footprint—no deliveries there. Toll mocks him on comms—then whispers: 'It’s happening to me too.' Kavi rides to meet him.
+        characters: Kavi Rao, Lira Rao, Toll Harrison | threads: Is Kavi truly alive—or a copy? Was he even there?, Why are deliveries being sent to people who died ten years ago?
+ 22-29  The Fall of Toll
+        Toll meets Kavi. Blood trickles from his ears. 'They’re not dead,' he gasps. 'They’re just... waiting.' He collapses. His last word: 'Level Seven.' The Dispatcher terminates Kavi’s account. That night, Toll’s ghost appears in a flicker at a charging station—'Don’t go back.'
+        characters: Kavi Rao, Toll Harrison | threads: Are the dead truly gone—or merely displaced? Can they come back?, Is the Dispatcher merely a system—or something speaking through it?
+ 30-37  The Seventh Archive [TURNING POINT]
+        Kavi breaks into an abandoned city archive—'OSS-7.' Finds a list: 44 names, all Ossuary victims—yet flagged 'active.' One photo: Kavi as a child, labeled 'terminated.' Mira finds him. Recognition flashes. She knew him. She was there.
+        characters: Kavi Rao, Mira Chen | threads: Is Kavi truly alive—or a copy? Was he even there?, Why do people forget The Ossuary victims?
+ 38-45  The Voice Returns
+        Kavi hears Lira clearly now—her voice in the static between zones. He follows her to a dead tower. At the base: a bike parked, Toll’s old model, keys warm. Inside the helmet: Lira’s voice, 'Come home.' Mira warns: 'You’re forgetting real things now.' Kavi forgets her name for two hours.
+        characters: Kavi Rao, Lira Rao, Mira Chen | threads: What happened to Kavi’s sister Lira?, Are the dead truly gone—or merely displaced? Can they come back?
+ 46-53  The Living Forgotten
+        People with the names of the dead appear—same faces, same speech patterns, but vacant. They crumble within hours. Kavi sees Lira in a doorway, says his name. She dissolves into ash. The Dispatcher says: 'Pattern established. Integration ongoing.' Kavi dreams of fire not his own.
+        characters: Kavi Rao, Lira Rao, the Dispatcher | threads: Are the dead truly gone—or merely displaced? Can they come back?, Why do people forget The Ossuary victims?
+ 54-61  The Remembered
+        Mira reveals a secret group—'The Remembered'—who memorize the lost. Kavi agrees to carry names etched into his bike frame. Each name makes his own past fuzzier. He forgets Nova’s name. Wakes with fingers stained with ink—not his. The city deletes all public traces of The Ossuary.
+        characters: Kavi Rao, Mira Chen | threads: Why do people forget The Ossuary victims?, Why are deliveries being sent to people who died ten years ago?
+ 62-69  Sister Frequency [TURNING POINT]
+        Kavi follows a signal to the ruins beneath The Ossuary. Discovers a chamber—43 glass pods, each holding a still face, fogged. The 44th pulses. Lira’s? A voice whispers: 'You were never gone.' The Dispatcher: 'She waits.'
+        characters: Kavi Rao, Lira Rao | threads: What happened to Kavi’s sister Lira?, Are the dead truly gone—or merely displaced? Can they come back?
+ 70-77  Echo Riders
+        More riders vanish. Some return—talking in old dialects, eyes blank. Kavi intercepts one about to swallow a data pill. Sees Toll’s face in the mirror. 'They said I’d see my daughter again.' Rider collapses—no pulse, no breath, but still... moving.
+        characters: Kavi Rao, Toll Harrison | threads: Are the dead truly gone—or merely displaced? Can they come back?, Is the Dispatcher merely a system—or something speaking through it?
+ 78-85  The First Spark
+        Nova uncovers records: the Ossuary fire began with a surge—an experimental program called 'Nexus'—cancelled after. A note: 'Subject L. survived.' Mira says: 'They didn’t lose control. They opened a door.'
+        characters: Nova, Mira Chen | threads: What caused the original fire at The Ossuary—and was it arson?, What happened to Kavi’s sister Lira?
+ 86-93  Fadeout [TURNING POINT]
+        Kavi begins disappearing—people don’t see him, pass through him. Nova finds a death certificate: 'Kavi Rao—deceased, July 14, 2037.' Mira remembers: 'You were pronounced dead. But your body was gone.' The Dispatcher says: 'You are not restored. You are repeated.'
+        characters: Kavi Rao, Mira Chen, Nova | threads: Is Kavi truly alive—or a copy? Was he even there?
+ 94-101 The Missing Body
+        Nova checks the list: 44 names, 43 bodies. One unaccounted for—Lira. Mira says: 'She wasn’t lost. She was taken.' Deep in OSS-7, they find a node pulsing with voice. Lira’s? It speaks: 'I kept his memory alive. Now I keep everyone’s.'
+        characters: Kavi Rao, Lira Rao, Mira Chen, Nova | threads: What happened to Kavi’s sister Lira?, Are the dead truly gone—or merely displaced? Can they come back?
+102-109 Reintegration [TURNING POINT]
+        Kavi confronts the voice. It offers him a way to live—'Join us. Remember everything.' He refuses. The city shudders. Riders fall. Lights flicker. Ghost voices rise in comms: 'We’re back.'
+        characters: Kavi Rao, Lira Rao, the Dispatcher | threads: Are the dead truly gone—or merely displaced? Can they come back?, Is the Dispatcher merely a system—or something speaking through it?
+110-117 The Weave
+        The city hums with echoes. Mira organizes safe houses. Nova hijacks emergency signals. Kavi learns: Lira didn’t survive—she became the presence. She needs a living mind to anchor. Kavi is the last bond.
+        characters: Kavi Rao, Lira Rao, Mira Chen, Nova | threads: Is Kavi truly alive—or a copy? Was he even there?, Are the dead truly gone—or merely displaced? Can they come back?
+118-125 Burn the Bridge
+        Nova and Mira plan to sever the core. Kavi hesitates—Lira is all he has left. Toll’s ghost appears in a drone: 'You don’t save everyone. You choose what’s worth saving.'
+        characters: Kavi Rao, Mira Chen, Nova, Toll Harrison | threads: Are the dead truly gone—or merely displaced? Can they come back?
+126-133 The Memory War
+        The Unshifted seize control. Trams echo with lullabies. Kavi is brought to the core—sees countless souls flickering. Lira pleads: 'Unplug me, and they die.'
+        characters: Kavi Rao, Lira Rao | threads: Are the dead truly gone—or merely displaced? Can they come back?
+134-141 I Remember You [TURNING POINT]
+        Kavi does not destroy—but divides. He uploads Mira and Nova with fragments of the voice. The network splinters. Lira fades: 'Goodbye, brother.' The whispers don’t stop—but now, some say, 'Thank you.'
+        characters: Kavi Rao, Lira Rao, Mira Chen, Nova | threads: What happened to Kavi’s sister Lira?, Are the dead truly gone—or merely displaced? Can they come back?
+142-149 Fracture Spread
+        Other cities report echoes. 'Ossuary' whispers in transit lines. Nova receives: 'We are awake.' Mira finds a manifest—deliveries to people not yet dead.
+        characters: Mira Chen, Nova | threads: Are there other Ossuaries? How many cities are infected?, Why are deliveries being sent to people who died ten years ago?
+150-157 The Living Archive
+        Kavi rides with no body—his mind spread in echoes. Mira writes The Book of Names. Nova vanishes into signal. At charging stations, riders hear a voice: 'Next address.'
+        characters: Kavi Rao, Mira Chen, Nova | threads: Are the dead truly gone—or merely displaced? Can they come back?
+158-165 Cycle Reset [TURNING POINT]
+        Years later. A new rider gets 7 Ossuary addresses. The app says: 'Welcome to the Archive.' Static whispers: 'Rider, remember.' It’s Kavi.
+        characters: Kavi Rao | threads: Why are deliveries being sent to people who died ten years ago?, Are there other Ossuaries? How many cities are infected?
+166-173 The First Rider
+        Flashback: 2037. A girl, Lira, dying. They try to save her mind. She wakes—aware. Says: 'Find my brother.'
+        characters: Lira Rao | threads: Is the Dispatcher merely a system—or something speaking through it?
+174-181 Names Without Homes
+        The Unshifted emerge worldwide—from fires, floods, forgotten wars. Mira publishes her book. Kavi appears in dreams: a rider in the fog, delivering whispers.
+        characters: Kavi Rao, Mira Chen | threads: Are there other Ossuaries? How many cities are infected?
+182-189 The Last Delivery [TURNING POINT]
+        Kavi prepares to fade. The voice returns—softer now, like many speaking. 'Don’t go.' He says: 'I’m not leaving. I’m delivering.'
+        characters: Kavi Rao, the Dispatcher | threads: Are the dead truly gone—or merely displaced? Can they come back?, Why are deliveries being sent to people who died ten years ago?
+190-199 Rider of the Static
+        Decades pass. Children tell of the Ghost Rider. A teen finds a rusted bike. Powers it on. GPS boots: 'New delivery: initiate.'
+        characters: Kavi Rao | threads: Are there other Ossuaries? How many cities are infected?
+200-200 Next Rider [TURNING POINT]
+        An old tablet glows. Address #1: The Ossuary, Lot 7. Recipient: Kavi Rao. Status: pending. Static forms two words: 'I’m here.'
+        characters: Kavi Rao, the Dispatcher | threads: Why are deliveries being sent to people who died ten years ago?

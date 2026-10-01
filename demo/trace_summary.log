@@ -1,0 +1,261 @@
+2026-10-01T17:51:24 INFO    src.llm.base: llm call ok stage=plan episode=None model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=570 completion_tokens=4873 cost_usd=0.00522 latency_ms=36915 retries=0
+2026-10-01T17:51:24 INFO    src.core.planner: arc plan v1 generated: 26 beats, 6 characters, 8 threads
+2026-10-01T17:51:24 INFO    src.core.orchestrator: plan gate v1 decision=edit
+2026-10-01T17:52:03 INFO    src.llm.base: llm call ok stage=plan episode=None model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4501 completion_tokens=5233 cost_usd=0.00661 latency_ms=39082 retries=0
+2026-10-01T17:52:03 INFO    src.core.planner: arc plan revised v1 -> v2: beats 26 -> 26, characters added=[] removed=[]
+2026-10-01T17:52:03 INFO    src.core.orchestrator: plan gate v2 decision=approve
+2026-10-01T17:52:03 INFO    src.core.planner: arc plan v2 approved
+2026-10-01T17:52:14 INFO    src.llm.base: llm call ok stage=draft episode=1 model=moonshotai.kimi-k2.5 prompt_tokens=1781 completion_tokens=743 cost_usd=0.00396 latency_ms=11431 retries=0
+2026-10-01T17:52:18 INFO    src.llm.base: llm call ok stage=critic episode=1 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1876 completion_tokens=412 cost_usd=0.00092 latency_ms=3621 retries=0
+2026-10-01T17:52:18 INFO    src.core.critic: critic episode=1 passed=True blockers=0 advice=4
+2026-10-01T17:52:18 INFO    src.core.orchestrator: episode 1 gate decision=approve feedback=False
+2026-10-01T17:52:25 INFO    src.llm.base: llm call ok stage=extract episode=1 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1670 completion_tokens=703 cost_usd=0.00117 latency_ms=7053 retries=0
+2026-10-01T17:52:25 INFO    src.core.extractor: extracted episode=1 characters=5 threads=1 facts=5
+2026-10-01T17:52:25 WARNING src.core.state_delta: not creating a character from the description 'woman in housedress'
+2026-10-01T17:52:25 WARNING src.core.state_delta: not creating a character from the description 'man at 7C'
+2026-10-01T17:52:25 INFO    src.core.orchestrator: episode 1 finalized status=approved source=generated
+2026-10-01T17:52:33 INFO    src.llm.base: llm call ok stage=draft episode=2 model=moonshotai.kimi-k2.5 prompt_tokens=2654 completion_tokens=875 cost_usd=0.00506 latency_ms=7868 retries=0
+2026-10-01T17:52:38 INFO    src.llm.base: llm call ok stage=critic episode=2 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2167 completion_tokens=440 cost_usd=0.00102 latency_ms=5024 retries=0
+2026-10-01T17:52:38 INFO    src.core.critic: critic episode=2 passed=True blockers=0 advice=3
+2026-10-01T17:52:38 INFO    src.core.orchestrator: episode 2 gate decision=approve feedback=False
+2026-10-01T17:52:47 INFO    src.llm.base: llm call ok stage=extract episode=2 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1827 completion_tokens=1071 cost_usd=0.00159 latency_ms=9480 retries=0
+2026-10-01T17:52:47 INFO    src.core.extractor: extracted episode=2 characters=4 threads=5 facts=7
+2026-10-01T17:52:47 WARNING src.core.state_delta: not creating a character from the description 'The helmet'
+2026-10-01T17:52:47 WARNING src.core.state_delta: thread thread_6b76fe28 is still planned; clamping reported status escalated to planted
+2026-10-01T17:52:47 WARNING src.core.state_delta: thread thread_4b544e3b is still planned; clamping reported status escalated to planted
+2026-10-01T17:52:47 WARNING src.core.state_delta: thread thread_6ec89b3b is still planned; clamping reported status escalated to planted
+2026-10-01T17:52:47 INFO    src.core.orchestrator: episode 2 finalized status=approved source=generated
+2026-10-01T17:52:58 INFO    src.llm.base: llm call ok stage=draft episode=3 model=moonshotai.kimi-k2.5 prompt_tokens=3802 completion_tokens=1026 cost_usd=0.00643 latency_ms=10105 retries=0
+2026-10-01T17:53:02 INFO    src.llm.base: llm call ok stage=critic episode=3 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2609 completion_tokens=602 cost_usd=0.00130 latency_ms=4761 retries=0
+2026-10-01T17:53:02 INFO    src.core.critic: critic episode=3 passed=False blockers=1 advice=3
+2026-10-01T17:53:02 WARNING src.core.orchestrator: episode 3 blockers, rewrite 1/2: Episode is 768 words; it must be 400-700. Aim for about 560: cut roughly 208 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:53:11 INFO    src.llm.base: llm call ok stage=revise episode=3 model=moonshotai.kimi-k2.5 prompt_tokens=4893 completion_tokens=956 cost_usd=0.00696 latency_ms=8223 retries=0
+2026-10-01T17:53:15 INFO    src.llm.base: llm call ok stage=critic episode=3 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2540 completion_tokens=451 cost_usd=0.00113 latency_ms=4482 retries=0
+2026-10-01T17:53:15 INFO    src.core.critic: critic episode=3 passed=False blockers=1 advice=3
+2026-10-01T17:53:15 WARNING src.core.orchestrator: episode 3 blockers, rewrite 2/2: Episode is 712 words; it must be 400-700. Aim for about 560: cut roughly 152 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:53:22 INFO    src.llm.base: llm call ok stage=revise episode=3 model=moonshotai.kimi-k2.5 prompt_tokens=4823 completion_tokens=841 cost_usd=0.00650 latency_ms=6508 retries=0
+2026-10-01T17:53:31 INFO    src.llm.base: llm call ok stage=critic episode=3 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2419 completion_tokens=714 cost_usd=0.00137 latency_ms=9529 retries=0
+2026-10-01T17:53:31 INFO    src.core.critic: critic episode=3 passed=True blockers=0 advice=3
+2026-10-01T17:53:31 INFO    src.core.orchestrator: episode 3 gate decision=reject feedback=False
+2026-10-01T17:53:39 INFO    src.llm.base: llm call ok stage=revise episode=3 model=moonshotai.kimi-k2.5 prompt_tokens=4688 completion_tokens=1074 cost_usd=0.00724 latency_ms=8322 retries=0
+2026-10-01T17:53:45 INFO    src.llm.base: llm call ok stage=critic episode=3 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2647 completion_tokens=633 cost_usd=0.00135 latency_ms=5239 retries=0
+2026-10-01T17:53:45 INFO    src.core.critic: critic episode=3 passed=False blockers=1 advice=4
+2026-10-01T17:53:45 WARNING src.core.orchestrator: episode 3 blockers, rewrite 1/2: Episode is 806 words; it must be 400-700. Aim for about 560: cut roughly 246 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:53:54 INFO    src.llm.base: llm call ok stage=revise episode=3 model=moonshotai.kimi-k2.5 prompt_tokens=4941 completion_tokens=1011 cost_usd=0.00720 latency_ms=8988 retries=0
+2026-10-01T17:53:59 INFO    src.llm.base: llm call ok stage=critic episode=3 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2581 completion_tokens=526 cost_usd=0.00122 latency_ms=5521 retries=0
+2026-10-01T17:53:59 INFO    src.core.critic: critic episode=3 passed=False blockers=2 advice=4
+2026-10-01T17:53:59 WARNING src.core.orchestrator: episode 3 blockers, rewrite 2/2: Episode is 770 words; it must be 400-700. Aim for about 560: cut roughly 210 words by removing whole sentences or minor beats, not by compressing every sentence.; Stray CJK characters appear in the text; remove them and keep the prose in English.
+2026-10-01T17:54:05 INFO    src.llm.base: llm call ok stage=revise episode=3 model=moonshotai.kimi-k2.5 prompt_tokens=4898 completion_tokens=860 cost_usd=0.00662 latency_ms=5693 retries=0
+2026-10-01T17:54:16 INFO    src.llm.base: llm call ok stage=critic episode=3 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2432 completion_tokens=1361 cost_usd=0.00205 latency_ms=11251 retries=0
+2026-10-01T17:54:16 INFO    src.core.critic: critic episode=3 passed=True blockers=0 advice=4
+2026-10-01T17:54:16 INFO    src.core.orchestrator: episode 3 gate decision=approve feedback=False
+2026-10-01T17:54:28 INFO    src.llm.base: llm call ok stage=extract episode=3 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1815 completion_tokens=926 cost_usd=0.00143 latency_ms=11483 retries=0
+2026-10-01T17:54:28 INFO    src.core.extractor: extracted episode=3 characters=4 threads=4 facts=5
+2026-10-01T17:54:28 WARNING src.core.state_delta: ignoring thread update without a real quote: 'What happened to Kavi’s sister Lira?'
+2026-10-01T17:54:28 INFO    src.core.orchestrator: episode 3 finalized status=approved source=generated
+2026-10-01T17:54:35 INFO    src.llm.base: llm call ok stage=draft episode=4 model=moonshotai.kimi-k2.5 prompt_tokens=4970 completion_tokens=1003 cost_usd=0.00719 latency_ms=6998 retries=0
+2026-10-01T17:54:41 INFO    src.llm.base: llm call ok stage=critic episode=4 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2871 completion_tokens=626 cost_usd=0.00140 latency_ms=6118 retries=0
+2026-10-01T17:54:41 INFO    src.core.critic: critic episode=4 passed=False blockers=1 advice=3
+2026-10-01T17:54:41 WARNING src.core.orchestrator: episode 4 blockers, rewrite 1/2: Episode is 775 words; it must be 400-700. Aim for about 560: cut roughly 215 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:54:51 INFO    src.llm.base: llm call ok stage=revise episode=4 model=moonshotai.kimi-k2.5 prompt_tokens=6038 completion_tokens=923 cost_usd=0.00767 latency_ms=9887 retries=0
+2026-10-01T17:54:57 INFO    src.llm.base: llm call ok stage=critic episode=4 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2793 completion_tokens=635 cost_usd=0.00139 latency_ms=5837 retries=0
+2026-10-01T17:54:57 INFO    src.core.critic: critic episode=4 passed=False blockers=1 advice=3
+2026-10-01T17:54:57 WARNING src.core.orchestrator: episode 4 blockers, rewrite 2/2: Episode is 709 words; it must be 400-700. Aim for about 560: cut roughly 149 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:55:02 INFO    src.llm.base: llm call ok stage=revise episode=4 model=moonshotai.kimi-k2.5 prompt_tokens=5958 completion_tokens=828 cost_usd=0.00727 latency_ms=5469 retries=0
+2026-10-01T17:55:09 INFO    src.llm.base: llm call ok stage=critic episode=4 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2699 completion_tokens=670 cost_usd=0.00140 latency_ms=7070 retries=0
+2026-10-01T17:55:09 INFO    src.core.critic: critic episode=4 passed=True blockers=0 advice=3
+2026-10-01T17:55:09 INFO    src.core.orchestrator: episode 4 gate decision=approve feedback=True
+2026-10-01T17:55:09 INFO    src.core.orchestrator: directive added id=dir_ef0cc6b3 scope=permanent expires_after=None text='End every episode on a line of spoken dialogue, a line inside quotation marks. Never end on a message, a notification, a sound, or an object appearing.'
+2026-10-01T17:55:26 INFO    src.llm.base: llm call ok stage=extract episode=4 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1798 completion_tokens=1840 cost_usd=0.00238 latency_ms=17281 retries=0
+2026-10-01T17:55:27 INFO    src.core.extractor: extracted episode=4 characters=9 threads=6 facts=6
+2026-10-01T17:55:27 WARNING src.core.state_delta: not creating a character from the description 'Lira (young woman in room)'
+2026-10-01T17:55:27 INFO    src.core.orchestrator: episode 4 finalized status=approved source=generated
+2026-10-01T17:55:33 INFO    src.llm.base: llm call ok stage=draft episode=5 model=moonshotai.kimi-k2.5 prompt_tokens=5315 completion_tokens=1041 cost_usd=0.00757 latency_ms=6723 retries=0
+2026-10-01T17:55:39 INFO    src.llm.base: llm call ok stage=critic episode=5 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3182 completion_tokens=585 cost_usd=0.00144 latency_ms=5782 retries=0
+2026-10-01T17:55:39 INFO    src.core.critic: critic episode=5 passed=False blockers=1 advice=3
+2026-10-01T17:55:39 WARNING src.core.orchestrator: episode 5 blockers, rewrite 1/2: Episode is 780 words; it must be 400-700. Aim for about 560: cut roughly 220 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:55:49 INFO    src.llm.base: llm call ok stage=revise episode=5 model=moonshotai.kimi-k2.5 prompt_tokens=6421 completion_tokens=925 cost_usd=0.00795 latency_ms=9561 retries=0
+2026-10-01T17:55:55 INFO    src.llm.base: llm call ok stage=critic episode=5 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3069 completion_tokens=668 cost_usd=0.00149 latency_ms=6531 retries=0
+2026-10-01T17:55:55 INFO    src.core.critic: critic episode=5 passed=True blockers=0 advice=4
+2026-10-01T17:55:55 INFO    src.core.orchestrator: episode 5 gate decision=approve feedback=False
+2026-10-01T17:56:20 ERROR   src.llm.base: llm call failed stage=extract attempt=0 retryable=False error=structured response from qwen.qwen3-235b-a22b-2507-v1:0 is unusable (stopReason=max_tokens); raise max_tokens for this call
+2026-10-01T17:56:20 WARNING src.llm.structured: structured output truncated stage=extract; retrying once with max_tokens=6000
+2026-10-01T17:56:30 INFO    src.llm.base: llm call ok stage=extract episode=5 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1906 completion_tokens=1012 cost_usd=0.00155 latency_ms=10527 retries=0
+2026-10-01T17:56:30 INFO    src.core.extractor: extracted episode=5 characters=5 threads=5 facts=4
+2026-10-01T17:56:30 WARNING src.core.state_delta: thread thread_db5a07a0 is still planned; clamping reported status escalated to planted
+2026-10-01T17:56:30 INFO    src.core.orchestrator: episode 5 finalized status=approved source=generated
+2026-10-01T17:56:38 INFO    src.llm.base: llm call ok stage=draft episode=6 model=moonshotai.kimi-k2.5 prompt_tokens=5549 completion_tokens=1070 cost_usd=0.00785 latency_ms=8278 retries=0
+2026-10-01T17:56:42 INFO    src.llm.base: llm call ok stage=critic episode=6 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3452 completion_tokens=386 cost_usd=0.00130 latency_ms=3036 retries=0
+2026-10-01T17:56:42 INFO    src.core.critic: critic episode=6 passed=False blockers=1 advice=3
+2026-10-01T17:56:42 WARNING src.core.orchestrator: episode 6 blockers, rewrite 1/2: Episode is 797 words; it must be 400-700. Aim for about 560: cut roughly 237 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:56:50 INFO    src.llm.base: llm call ok stage=revise episode=6 model=moonshotai.kimi-k2.5 prompt_tokens=6683 completion_tokens=847 cost_usd=0.00786 latency_ms=8128 retries=0
+2026-10-01T17:56:55 INFO    src.llm.base: llm call ok stage=critic episode=6 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3217 completion_tokens=491 cost_usd=0.00135 latency_ms=5030 retries=0
+2026-10-01T17:56:55 INFO    src.core.critic: critic episode=6 passed=True blockers=0 advice=3
+2026-10-01T17:56:55 INFO    src.core.orchestrator: episode 6 gate decision=approve feedback=False
+2026-10-01T17:57:02 INFO    src.llm.base: llm call ok stage=extract episode=6 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1857 completion_tokens=995 cost_usd=0.00152 latency_ms=7737 retries=0
+2026-10-01T17:57:02 INFO    src.core.extractor: extracted episode=6 characters=5 threads=4 facts=6
+2026-10-01T17:57:03 INFO    src.core.orchestrator: episode 6 finalized status=approved source=generated
+2026-10-01T17:57:14 INFO    src.llm.base: llm call ok stage=draft episode=7 model=moonshotai.kimi-k2.5 prompt_tokens=5773 completion_tokens=946 cost_usd=0.00756 latency_ms=11194 retries=0
+2026-10-01T17:57:17 INFO    src.llm.base: llm call ok stage=critic episode=7 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3564 completion_tokens=460 cost_usd=0.00141 latency_ms=3644 retries=0
+2026-10-01T17:57:17 INFO    src.core.critic: critic episode=7 passed=False blockers=1 advice=4
+2026-10-01T17:57:17 WARNING src.core.orchestrator: episode 7 blockers, rewrite 1/2: Episode is 701 words; it must be 400-700. Aim for about 560: cut roughly 141 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T17:57:26 INFO    src.llm.base: llm call ok stage=revise episode=7 model=moonshotai.kimi-k2.5 prompt_tokens=6783 completion_tokens=781 cost_usd=0.00770 latency_ms=8979 retries=0
+2026-10-01T17:57:31 INFO    src.llm.base: llm call ok stage=critic episode=7 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3382 completion_tokens=619 cost_usd=0.00152 latency_ms=4921 retries=0
+2026-10-01T17:57:31 INFO    src.core.critic: critic episode=7 passed=False blockers=1 advice=3
+2026-10-01T17:57:31 WARNING src.core.orchestrator: episode 7 blockers, rewrite 2/2: Stray CJK characters appear in the text; remove them and keep the prose in English.
+2026-10-01T17:57:37 INFO    src.llm.base: llm call ok stage=revise episode=7 model=moonshotai.kimi-k2.5 prompt_tokens=6597 completion_tokens=782 cost_usd=0.00757 latency_ms=5341 retries=0
+2026-10-01T17:57:44 INFO    src.llm.base: llm call ok stage=critic episode=7 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3382 completion_tokens=537 cost_usd=0.00144 latency_ms=7021 retries=0
+2026-10-01T17:57:44 INFO    src.core.critic: critic episode=7 passed=True blockers=0 advice=3
+2026-10-01T17:57:44 INFO    src.core.orchestrator: episode 7 gate decision=approve feedback=False
+2026-10-01T17:57:52 INFO    src.llm.base: llm call ok stage=extract episode=7 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1788 completion_tokens=1070 cost_usd=0.00158 latency_ms=8132 retries=0
+2026-10-01T17:57:52 INFO    src.core.extractor: extracted episode=7 characters=6 threads=5 facts=6
+2026-10-01T17:57:52 WARNING src.core.state_delta: not creating a character from the description 'child-Lira'
+2026-10-01T17:57:52 INFO    src.core.orchestrator: episode 7 finalized status=approved source=generated
+2026-10-01T17:57:58 INFO    src.llm.base: llm call ok stage=draft episode=8 model=moonshotai.kimi-k2.5 prompt_tokens=5688 completion_tokens=899 cost_usd=0.00733 latency_ms=6565 retries=0
+2026-10-01T17:58:04 INFO    src.llm.base: llm call ok stage=critic episode=8 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3597 completion_tokens=592 cost_usd=0.00155 latency_ms=5224 retries=0
+2026-10-01T17:58:04 INFO    src.core.critic: critic episode=8 passed=False blockers=1 advice=4
+2026-10-01T17:58:04 WARNING src.core.orchestrator: episode 8 blockers, rewrite 1/2: Stray CJK characters appear in the text; remove them and keep the prose in English.
+2026-10-01T17:58:11 INFO    src.llm.base: llm call ok stage=revise episode=8 model=moonshotai.kimi-k2.5 prompt_tokens=6630 completion_tokens=894 cost_usd=0.00799 latency_ms=6866 retries=0
+2026-10-01T17:58:14 INFO    src.llm.base: llm call ok stage=critic episode=8 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3592 completion_tokens=461 cost_usd=0.00141 latency_ms=3912 retries=0
+2026-10-01T17:58:15 INFO    src.core.critic: critic episode=8 passed=True blockers=0 advice=4
+2026-10-01T17:58:15 INFO    src.core.orchestrator: episode 8 gate decision=approve feedback=True
+2026-10-01T17:58:15 INFO    src.core.orchestrator: directive added id=dir_7283161b scope=next_n_episodes expires_after=13 text='Kill off Mira Chen within the next few episodes: the death happens on the page, is shocking, and changes what the protagonist does next.'
+2026-10-01T17:58:25 INFO    src.llm.base: llm call ok stage=extract episode=8 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1906 completion_tokens=1203 cost_usd=0.00175 latency_ms=10494 retries=0
+2026-10-01T17:58:25 INFO    src.core.extractor: extracted episode=8 characters=4 threads=5 facts=6
+2026-10-01T17:58:25 WARNING src.core.state_delta: not creating a character from the description "child with Kavi's face"
+2026-10-01T17:58:25 INFO    src.core.orchestrator: episode 8 finalized status=approved source=generated
+2026-10-01T17:58:34 INFO    src.llm.base: llm call ok stage=draft episode=9 model=moonshotai.kimi-k2.5 prompt_tokens=5805 completion_tokens=1232 cost_usd=0.00861 latency_ms=8672 retries=0
+2026-10-01T17:58:39 INFO    src.llm.base: llm call ok stage=critic episode=9 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4123 completion_tokens=480 cost_usd=0.00157 latency_ms=5419 retries=0
+2026-10-01T17:58:39 INFO    src.core.critic: critic episode=9 passed=False blockers=2 advice=4
+2026-10-01T17:58:39 WARNING src.core.orchestrator: episode 9 blockers, rewrite 1/2: Episode is 892 words; it must be 400-700. Aim for about 560: cut roughly 332 words by removing whole sentences or minor beats, not by compressing every sentence.; The word 'kavi's' appears 11 times, which reads as a tic. Cut most of them and vary the language.
+2026-10-01T17:58:45 INFO    src.llm.base: llm call ok stage=revise episode=9 model=moonshotai.kimi-k2.5 prompt_tokens=7129 completion_tokens=926 cost_usd=0.00847 latency_ms=6203 retries=0
+2026-10-01T17:58:57 INFO    src.llm.base: llm call ok stage=critic episode=9 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3797 completion_tokens=846 cost_usd=0.00187 latency_ms=11311 retries=0
+2026-10-01T17:58:57 INFO    src.core.critic: critic episode=9 passed=True blockers=0 advice=3
+2026-10-01T17:58:57 INFO    src.core.orchestrator: episode 9 gate decision=approve feedback=False
+2026-10-01T17:59:06 INFO    src.llm.base: llm call ok stage=extract episode=9 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1932 completion_tokens=1129 cost_usd=0.00168 latency_ms=9288 retries=0
+2026-10-01T17:59:06 INFO    src.core.extractor: extracted episode=9 characters=8 threads=5 facts=6
+2026-10-01T17:59:06 INFO    src.core.orchestrator: episode 9 finalized status=approved source=generated
+2026-10-01T17:59:06 WARNING src.core.memory: 16 relevant facts, truncated to 15
+2026-10-01T17:59:13 INFO    src.llm.base: llm call ok stage=draft episode=10 model=moonshotai.kimi-k2.5 prompt_tokens=6094 completion_tokens=903 cost_usd=0.00764 latency_ms=6586 retries=0
+2026-10-01T17:59:16 INFO    src.llm.base: llm call ok stage=critic episode=10 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3987 completion_tokens=392 cost_usd=0.00144 latency_ms=3208 retries=0
+2026-10-01T17:59:16 INFO    src.core.critic: critic episode=10 passed=True blockers=0 advice=3
+2026-10-01T17:59:16 WARNING src.core.memory: 16 relevant facts, truncated to 15
+2026-10-01T17:59:16 INFO    src.core.orchestrator: episode 10 gate decision=approve feedback=False
+2026-10-01T17:59:50 ERROR   src.llm.base: llm call failed stage=extract attempt=0 retryable=False error=structured response from qwen.qwen3-235b-a22b-2507-v1:0 is unusable (stopReason=max_tokens); raise max_tokens for this call
+2026-10-01T17:59:50 WARNING src.llm.structured: structured output truncated stage=extract; retrying once with max_tokens=6000
+2026-10-01T17:59:58 INFO    src.llm.base: llm call ok stage=extract episode=10 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1915 completion_tokens=1010 cost_usd=0.00155 latency_ms=7854 retries=0
+2026-10-01T17:59:58 INFO    src.core.extractor: extracted episode=10 characters=5 threads=5 facts=5
+2026-10-01T17:59:58 WARNING src.core.state_delta: ignoring thread update without a real quote: 'Is the Dispatcher merely a system—or something speaking thro'
+2026-10-01T18:00:04 INFO    src.llm.base: llm call ok stage=summarize episode=10 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=656 completion_tokens=443 cost_usd=0.00063 latency_ms=5453 retries=0
+2026-10-01T18:00:04 INFO    src.core.summarizer: block summary saved block=1 episodes=1-10
+2026-10-01T18:00:04 INFO    src.core.orchestrator: episode 10 finalized status=approved source=generated
+2026-10-01T18:00:04 WARNING src.core.memory: 21 relevant facts, truncated to 15
+2026-10-01T18:00:22 INFO    src.llm.base: llm call ok stage=draft episode=11 model=moonshotai.kimi-k2.5 prompt_tokens=6302 completion_tokens=1132 cost_usd=0.00861 latency_ms=18042 retries=0
+2026-10-01T18:00:25 INFO    src.llm.base: llm call ok stage=critic episode=11 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4324 completion_tokens=436 cost_usd=0.00158 latency_ms=3508 retries=0
+2026-10-01T18:00:25 INFO    src.core.critic: critic episode=11 passed=False blockers=1 advice=4
+2026-10-01T18:00:25 WARNING src.core.orchestrator: episode 11 blockers, rewrite 1/2: Episode is 818 words; it must be 400-700. Aim for about 560: cut roughly 258 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T18:00:32 INFO    src.llm.base: llm call ok stage=revise episode=11 model=moonshotai.kimi-k2.5 prompt_tokens=7499 completion_tokens=803 cost_usd=0.00829 latency_ms=6545 retries=0
+2026-10-01T18:00:37 INFO    src.llm.base: llm call ok stage=critic episode=11 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=3983 completion_tokens=599 cost_usd=0.00166 latency_ms=4869 retries=0
+2026-10-01T18:00:37 INFO    src.core.critic: critic episode=11 passed=True blockers=0 advice=4
+2026-10-01T18:00:37 WARNING src.core.memory: 21 relevant facts, truncated to 15
+2026-10-01T18:00:37 INFO    src.core.orchestrator: episode 11 gate decision=approve feedback=False
+2026-10-01T18:00:48 INFO    src.llm.base: llm call ok stage=extract episode=11 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1814 completion_tokens=1392 cost_usd=0.00192 latency_ms=11556 retries=0
+2026-10-01T18:00:48 INFO    src.core.extractor: extracted episode=11 characters=8 threads=5 facts=5
+2026-10-01T18:00:48 WARNING src.core.state_delta: ignoring thread update without a real quote: 'What caused the original fire at The Ossuary—and was it arso'
+2026-10-01T18:00:48 INFO    src.core.orchestrator: episode 11 finalized status=approved source=generated
+2026-10-01T18:00:48 WARNING src.core.memory: 21 relevant facts, truncated to 15
+2026-10-01T18:00:57 INFO    src.llm.base: llm call ok stage=draft episode=12 model=moonshotai.kimi-k2.5 prompt_tokens=6232 completion_tokens=926 cost_usd=0.00782 latency_ms=8797 retries=0
+2026-10-01T18:01:01 INFO    src.llm.base: llm call ok stage=critic episode=12 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4078 completion_tokens=424 cost_usd=0.00150 latency_ms=3522 retries=0
+2026-10-01T18:01:01 INFO    src.core.critic: critic episode=12 passed=True blockers=0 advice=4
+2026-10-01T18:01:01 WARNING src.core.memory: 21 relevant facts, truncated to 15
+2026-10-01T18:01:01 INFO    src.core.orchestrator: episode 12 gate decision=approve feedback=False
+2026-10-01T18:01:13 INFO    src.llm.base: llm call ok stage=extract episode=12 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1910 completion_tokens=1184 cost_usd=0.00173 latency_ms=12590 retries=0
+2026-10-01T18:01:13 INFO    src.core.extractor: extracted episode=12 characters=5 threads=5 facts=6
+2026-10-01T18:01:13 WARNING src.core.state_delta: ignoring unquoted status change alive -> dead for Mira Chen
+2026-10-01T18:01:13 INFO    src.core.orchestrator: episode 12 finalized status=approved source=generated
+2026-10-01T18:01:13 WARNING src.core.memory: 26 relevant facts, truncated to 15
+2026-10-01T18:01:21 INFO    src.llm.base: llm call ok stage=draft episode=13 model=moonshotai.kimi-k2.5 prompt_tokens=6235 completion_tokens=894 cost_usd=0.00771 latency_ms=7336 retries=0
+2026-10-01T18:01:28 INFO    src.llm.base: llm call ok stage=critic episode=13 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4228 completion_tokens=622 cost_usd=0.00175 latency_ms=7585 retries=0
+2026-10-01T18:01:28 INFO    src.core.critic: critic episode=13 passed=True blockers=0 advice=4
+2026-10-01T18:01:28 WARNING src.core.memory: 26 relevant facts, truncated to 15
+2026-10-01T18:01:28 INFO    src.core.orchestrator: episode 13 gate decision=approve feedback=False
+2026-10-01T18:01:58 ERROR   src.llm.base: llm call failed stage=extract attempt=0 retryable=False error=structured response from qwen.qwen3-235b-a22b-2507-v1:0 is unusable (stopReason=max_tokens); raise max_tokens for this call
+2026-10-01T18:01:58 WARNING src.llm.structured: structured output truncated stage=extract; retrying once with max_tokens=6000
+2026-10-01T18:02:09 INFO    src.llm.base: llm call ok stage=extract episode=13 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1911 completion_tokens=1459 cost_usd=0.00201 latency_ms=11013 retries=0
+2026-10-01T18:02:09 INFO    src.core.extractor: extracted episode=13 characters=8 threads=5 facts=7
+2026-10-01T18:02:09 WARNING src.core.state_delta: not creating a character from the description "child with Kavi's face"
+2026-10-01T18:02:09 INFO    src.core.orchestrator: episode 13 finalized status=approved source=generated
+2026-10-01T18:02:09 WARNING src.core.memory: 30 relevant facts, truncated to 15
+2026-10-01T18:02:16 INFO    src.llm.base: llm call ok stage=draft episode=14 model=moonshotai.kimi-k2.5 prompt_tokens=6281 completion_tokens=1092 cost_usd=0.00845 latency_ms=7031 retries=0
+2026-10-01T18:02:19 INFO    src.llm.base: llm call ok stage=critic episode=14 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4479 completion_tokens=372 cost_usd=0.00155 latency_ms=3072 retries=0
+2026-10-01T18:02:19 INFO    src.core.critic: critic episode=14 passed=False blockers=1 advice=3
+2026-10-01T18:02:19 WARNING src.core.orchestrator: episode 14 blockers, rewrite 1/2: Episode is 776 words; it must be 400-700. Aim for about 560: cut roughly 216 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T18:02:30 INFO    src.llm.base: llm call ok stage=revise episode=14 model=moonshotai.kimi-k2.5 prompt_tokens=7438 completion_tokens=1001 cost_usd=0.00896 latency_ms=11065 retries=0
+2026-10-01T18:02:36 INFO    src.llm.base: llm call ok stage=critic episode=14 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4385 completion_tokens=659 cost_usd=0.00183 latency_ms=5454 retries=0
+2026-10-01T18:02:36 INFO    src.core.critic: critic episode=14 passed=False blockers=1 advice=4
+2026-10-01T18:02:36 WARNING src.core.orchestrator: episode 14 blockers, rewrite 2/2: Episode is 701 words; it must be 400-700. Aim for about 560: cut roughly 141 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T18:02:41 INFO    src.llm.base: llm call ok stage=revise episode=14 model=moonshotai.kimi-k2.5 prompt_tokens=7347 completion_tokens=835 cost_usd=0.00830 latency_ms=5677 retries=0
+2026-10-01T18:02:45 INFO    src.llm.base: llm call ok stage=critic episode=14 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4213 completion_tokens=317 cost_usd=0.00143 latency_ms=3133 retries=0
+2026-10-01T18:02:45 INFO    src.core.critic: critic episode=14 passed=True blockers=0 advice=2
+2026-10-01T18:02:45 WARNING src.core.memory: 30 relevant facts, truncated to 15
+2026-10-01T18:02:45 INFO    src.core.orchestrator: episode 14 gate decision=approve feedback=False
+2026-10-01T18:02:54 INFO    src.llm.base: llm call ok stage=extract episode=14 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1871 completion_tokens=773 cost_usd=0.00129 latency_ms=8994 retries=0
+2026-10-01T18:02:54 INFO    src.core.extractor: extracted episode=14 characters=4 threads=4 facts=4
+2026-10-01T18:02:54 INFO    src.core.orchestrator: episode 14 finalized status=approved source=generated
+2026-10-01T18:02:54 WARNING src.core.memory: 43 relevant facts, truncated to 15
+2026-10-01T18:03:06 INFO    src.llm.base: llm call ok stage=draft episode=15 model=moonshotai.kimi-k2.5 prompt_tokens=6375 completion_tokens=1381 cost_usd=0.00956 latency_ms=12570 retries=0
+2026-10-01T18:03:12 INFO    src.llm.base: llm call ok stage=critic episode=15 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4851 completion_tokens=567 cost_usd=0.00185 latency_ms=6069 retries=0
+2026-10-01T18:03:12 INFO    src.core.critic: critic episode=15 passed=False blockers=1 advice=3
+2026-10-01T18:03:12 WARNING src.core.orchestrator: episode 15 blockers, rewrite 1/2: Episode is 1011 words; it must be 400-700. Aim for about 560: cut roughly 451 words by removing whole sentences or minor beats, not by compressing every sentence.
+2026-10-01T18:03:20 INFO    src.llm.base: llm call ok stage=revise episode=15 model=moonshotai.kimi-k2.5 prompt_tokens=7821 completion_tokens=883 cost_usd=0.00881 latency_ms=7522 retries=0
+2026-10-01T18:03:27 INFO    src.llm.base: llm call ok stage=critic episode=15 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4348 completion_tokens=592 cost_usd=0.00175 latency_ms=7152 retries=0
+2026-10-01T18:03:27 INFO    src.core.critic: critic episode=15 passed=True blockers=0 advice=3
+2026-10-01T18:03:27 WARNING src.core.memory: 43 relevant facts, truncated to 15
+2026-10-01T18:03:27 INFO    src.core.orchestrator: episode 15 gate decision=approve feedback=False
+2026-10-01T18:03:50 ERROR   src.llm.base: llm call failed stage=extract attempt=0 retryable=False error=structured response from qwen.qwen3-235b-a22b-2507-v1:0 is unusable (stopReason=max_tokens); raise max_tokens for this call
+2026-10-01T18:03:50 WARNING src.llm.structured: structured output truncated stage=extract; retrying once with max_tokens=6000
+2026-10-01T18:04:07 INFO    src.llm.base: llm call ok stage=extract episode=15 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1943 completion_tokens=2280 cost_usd=0.00288 latency_ms=17016 retries=0
+2026-10-01T18:04:07 INFO    src.core.extractor: extracted episode=15 characters=17 threads=6 facts=9
+2026-10-01T18:04:07 INFO    src.core.orchestrator: episode 15 finalized status=approved source=generated
+2026-10-01T18:04:07 WARNING src.core.memory: episode 16: 11 relevant characters, truncated to 10
+2026-10-01T18:04:07 WARNING src.core.memory: 43 relevant facts, truncated to 15
+2026-10-01T18:04:16 INFO    src.llm.base: llm call ok stage=draft episode=16 model=moonshotai.kimi-k2.5 prompt_tokens=6352 completion_tokens=1007 cost_usd=0.00820 latency_ms=9115 retries=0
+2026-10-01T18:04:22 INFO    src.llm.base: llm call ok stage=critic episode=16 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4517 completion_tokens=415 cost_usd=0.00161 latency_ms=6291 retries=0
+2026-10-01T18:04:22 INFO    src.core.critic: critic episode=16 passed=False blockers=2 advice=3
+2026-10-01T18:04:22 WARNING src.core.orchestrator: episode 16 blockers, rewrite 1/2: Episode is 725 words; it must be 400-700. Aim for about 560: cut roughly 165 words by removing whole sentences or minor beats, not by compressing every sentence.; Stray CJK characters appear in the text; remove them and keep the prose in English.
+2026-10-01T18:04:28 INFO    src.llm.base: llm call ok stage=revise episode=16 model=moonshotai.kimi-k2.5 prompt_tokens=7443 completion_tokens=839 cost_usd=0.00838 latency_ms=6049 retries=0
+2026-10-01T18:04:34 INFO    src.llm.base: llm call ok stage=critic episode=16 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4349 completion_tokens=680 cost_usd=0.00184 latency_ms=5295 retries=0
+2026-10-01T18:04:34 INFO    src.core.critic: critic episode=16 passed=True blockers=0 advice=3
+2026-10-01T18:04:34 WARNING src.core.memory: episode 16: 11 relevant characters, truncated to 10
+2026-10-01T18:04:34 WARNING src.core.memory: 43 relevant facts, truncated to 15
+2026-10-01T18:04:34 INFO    src.core.orchestrator: episode 16 gate decision=approve feedback=False
+2026-10-01T18:04:43 INFO    src.llm.base: llm call ok stage=extract episode=16 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1923 completion_tokens=1200 cost_usd=0.00175 latency_ms=9227 retries=0
+2026-10-01T18:04:43 INFO    src.core.extractor: extracted episode=16 characters=9 threads=6 facts=5
+2026-10-01T18:04:43 WARNING src.core.state_delta: ignoring thread update without a real quote: 'Is the Dispatcher merely a system—or something speaking thro'
+2026-10-01T18:04:43 INFO    src.core.orchestrator: episode 16 finalized status=approved source=generated
+2026-10-01T18:04:43 WARNING src.core.memory: episode 17: 11 relevant characters, truncated to 10
+2026-10-01T18:04:43 WARNING src.core.memory: 48 relevant facts, truncated to 15
+2026-10-01T18:04:49 INFO    src.llm.base: llm call ok stage=draft episode=17 model=moonshotai.kimi-k2.5 prompt_tokens=6343 completion_tokens=860 cost_usd=0.00766 latency_ms=5689 retries=0
+2026-10-01T18:04:54 INFO    src.llm.base: llm call ok stage=critic episode=17 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4413 completion_tokens=713 cost_usd=0.00189 latency_ms=5604 retries=0
+2026-10-01T18:04:54 INFO    src.core.critic: critic episode=17 passed=True blockers=0 advice=4
+2026-10-01T18:04:54 WARNING src.core.memory: episode 17: 11 relevant characters, truncated to 10
+2026-10-01T18:04:54 WARNING src.core.memory: 48 relevant facts, truncated to 15
+2026-10-01T18:04:54 INFO    src.core.orchestrator: episode 17 gate decision=approve feedback=False
+2026-10-01T18:05:05 INFO    src.llm.base: llm call ok stage=extract episode=17 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=1944 completion_tokens=1449 cost_usd=0.00201 latency_ms=10830 retries=0
+2026-10-01T18:05:05 INFO    src.core.extractor: extracted episode=17 characters=7 threads=6 facts=8
+2026-10-01T18:05:05 INFO    src.core.orchestrator: episode 17 finalized status=approved source=generated
+2026-10-01T18:05:05 WARNING src.core.memory: episode 18: 11 relevant characters, truncated to 10
+2026-10-01T18:05:05 WARNING src.core.memory: 53 relevant facts, truncated to 15
+2026-10-01T18:05:13 INFO    src.llm.base: llm call ok stage=draft episode=18 model=moonshotai.kimi-k2.5 prompt_tokens=6387 completion_tokens=931 cost_usd=0.00795 latency_ms=7190 retries=0
+2026-10-01T18:05:19 INFO    src.llm.base: llm call ok stage=critic episode=18 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=4479 completion_tokens=549 cost_usd=0.00174 latency_ms=6010 retries=0
+2026-10-01T18:05:19 INFO    src.core.critic: critic episode=18 passed=True blockers=0 advice=3
+2026-10-01T18:05:19 WARNING src.core.memory: episode 18: 11 relevant characters, truncated to 10
+2026-10-01T18:05:19 WARNING src.core.memory: 53 relevant facts, truncated to 15
+2026-10-01T18:05:19 INFO    src.core.orchestrator: episode 18 gate decision=approve feedback=False
+2026-10-01T18:05:30 INFO    src.llm.base: llm call ok stage=extract episode=18 model=qwen.qwen3-235b-a22b-2507-v1:0 prompt_tokens=2016 completion_tokens=1232 cost_usd=0.00181 latency_ms=11751 retries=0
+2026-10-01T18:05:30 INFO    src.core.extractor: extracted episode=18 characters=12 threads=6 facts=6
+2026-10-01T18:05:30 WARNING src.core.state_delta: ignoring unquoted status change alive -> unknown for Nova
+2026-10-01T18:05:30 WARNING src.core.state_delta: ignoring unquoted status change alive -> unknown for the Dispatcher
+2026-10-01T18:05:30 WARNING src.core.state_delta: ignoring thread update without a real quote: 'What caused the original fire at The Ossuary—and was it arso'
+2026-10-01T18:05:30 WARNING src.core.state_delta: ignoring thread update without a real quote: 'Is the Dispatcher merely a system—or something speaking thro'
+2026-10-01T18:05:30 INFO    src.core.orchestrator: episode 18 finalized status=approved source=generated

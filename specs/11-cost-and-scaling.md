@@ -38,4 +38,4 @@ building.
 - `src/core/cost.py` projects from measured spend (plan once + observed per-episode average incl. rewrites); surfaced by `cost-report`.
 - DECISIONS.md carries an arithmetic estimate clearly labelled as such; replace it with `cost-report` numbers after a live run.
 
-## Status: [~] tooling done; real numbers pending a live run
+## Status: [x] implemented. Measured on a live 18-episode Bedrock run: $0.37, about 13 minutes of LLM time; projection to 200 episodes about $4 and 2.2 hours (see DECISIONS.md).

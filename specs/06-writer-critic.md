@@ -34,3 +34,5 @@ silently looping or silently shipping (bounded, per requirements).
 - The revision loop lives in `orchestrator._produce_draft` (it owns bounds); `writer.draft_episode` takes a `Revision`.
 
 ## Status: [x] implemented (`src/core/writer.py`, `src/core/critic.py`, prompts), `tests/test_writer.py`, `tests/test_critic.py`
+
+Changed after live runs: only objective rules (word count, recycled phrasing, repeated word, stray glyphs) trigger rewrites; the LLM judge's findings are advice shown at the human gate, because its contradiction verdicts proved unreliable. The best draft is shipped on escalation. The writer's length target was lowered after the demo (it overshot 700 words); not re-run.

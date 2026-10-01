@@ -12,7 +12,7 @@ from src.storage import repo
 
 logger = logging.getLogger(__name__)
 
-EXTRACTOR_MAX_TOKENS = 3000
+EXTRACTOR_MAX_TOKENS = 4500
 TERMINAL_VALUES = frozenset({"dead", "missing", "resolved", "abandoned"})
 
 

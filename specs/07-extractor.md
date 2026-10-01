@@ -26,3 +26,5 @@ few dozen episodes. Running this once per episode and persisting structured stat
 - Identity resolution: roster ids in the prompt, then exact name/alias lookup, then create. Thread status can only move forward.
 
 ## Status: [x] implemented, `tests/test_state_delta.py`, `tests/test_summarizer.py`
+
+Changed after live runs: status changes and thread updates need an exact quote from the episode (`evidence`, required for threads); new characters need a proper name; planned threads cannot move early; a truncated extraction is retried once with double max_tokens. Known gap: ambiguous events (a ghost-story death) are dropped for lack of a quote, so state can disagree with the story (DECISIONS.md).

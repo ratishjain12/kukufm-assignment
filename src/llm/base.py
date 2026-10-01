@@ -77,7 +77,8 @@ def call_with_tracking(
         except LLMError as exc:
             final_attempt = attempt == MAX_ATTEMPTS - 1
             if not exc.retryable or final_attempt:
-                logger.error("llm call failed stage=%s attempt=%d retryable=%s error=%s", stage, attempt, exc.retryable, exc)
+                level = logging.WARNING if isinstance(exc, LLMTruncated) else logging.ERROR  # callers retry truncation with a larger cap
+                logger.log(level, "llm call failed stage=%s attempt=%d retryable=%s error=%s", stage, attempt, exc.retryable, exc)
                 raise
             wait = BACKOFF_BASE_SECONDS * 2**attempt
             logger.warning("llm call retry stage=%s attempt=%d wait=%.1fs error=%s", stage, attempt, wait, exc)

@@ -1,0 +1,14 @@
+Run run_d0fff703: 93 LLM calls, 18 episodes done, 0 retries
+Spent $0.3732  |  tokens in/out 378,066/86,979  |  LLM time 770s
+
+By stage:
+  critic     calls=36   $0.0543  201s
+  draft      calls=18   $0.1352  160s
+  extract    calls=18   $0.0316  192s
+  plan       calls=2    $0.0118  76s
+  revise     calls=18   $0.1397  135s
+  summarize  calls=1    $0.0006  5s
+
+Projection to 200 episodes (measured average incl. revisions/rejections; LLM time only, excludes human review):
+  per episode: $0.0201, 39s, 24,992 tokens
+  total:       $4.03, 2.2h of LLM time, 5,013,577 tokens
